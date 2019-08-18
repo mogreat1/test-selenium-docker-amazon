@@ -11,7 +11,7 @@ import pages.PLPComputersPage;
 import pages.PLPiPhonePage;
 
 public class SearchTests extends BaseTest {
-	HomePage homePage;
+	private HomePage homePage;
 
 	@BeforeMethod
 	public void beforeMethods() {
