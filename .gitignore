@@ -1,0 +1,9 @@
+*.jar
+*.png
+*.gif
+*.html
+*.js
+*.css
+testng-failed.xml
+testng-results.xml
+TEST-tests.SearchTests.xml
