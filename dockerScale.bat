@@ -1,2 +1,2 @@
-docker-compose scale chrome=5
+docker-compose scale chrome=3
 exit 0
