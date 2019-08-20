@@ -18,7 +18,7 @@ public class SearchTests extends BaseTest {
 		homePage = new HomePage(driver);
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	private void searchIphoneTest() {
 
 		String searchedText = "iPhone";
@@ -29,7 +29,7 @@ public class SearchTests extends BaseTest {
 		Assert.assertTrue(plp.doesContainSearchedText(searchedText));
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	private void choosingBooksCategoryTest() {
 		PLPBooksPage booksPage = new PLPBooksPage(driver);
 
@@ -38,7 +38,7 @@ public class SearchTests extends BaseTest {
 
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	private void selectFromDepartmentDropdownTest() {
 		homePage.selectDepartmentsDropdown();
 		PLPComputersPage computePage = new PLPComputersPage(driver);
