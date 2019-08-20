@@ -5,6 +5,7 @@
         <classes>
             <class name="tests.PLPTests"/>
             <class name="tests.SearchTests"/>
+            <class name="tests.SearchTests"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -35,6 +35,11 @@ public class HomePage extends BasePage{
 	
 	@FindBy(xpath="//span[text()='Computers']")
 	WebElement department;
+
+	@FindBy(xpath = "//*[contains(text(),'Account & Lists')][1]")
+	WebElement accountListsLink;
+	@FindBy(xpath = "//*[text()='Explore Idea Lists']")
+	WebElement exploreIdeaList;
 	
 	public HomePage sendSearchText(String text) {
 		sendText(searchField, text);
@@ -53,8 +58,7 @@ public class HomePage extends BasePage{
 	}
 	
 	public HomePage selectDepartmentsDropdown() {
-		Actions action = new Actions(driver);
-		action.moveToElement(departmentsDropdown).moveToElement(department).click().build().perform();	
+		action.moveToElement(departmentsDropdown).moveToElement(department).click().build().perform();
 		return this;
 	}
 	
@@ -69,6 +73,16 @@ public class HomePage extends BasePage{
 		}
 		
 		return containsKey;
+	}
+
+	public HomePage moveToAccountLists(){
+		action.moveToElement(accountListsLink).build().perform();
+		return this;
+	}
+
+	public HomePage clickExploreIdeaLists(){
+		action.moveToElement(exploreIdeaList).click().build().perform();
+		return this;
 	}
 	
 	
